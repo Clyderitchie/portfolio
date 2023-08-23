@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Header element tags */
+header {
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
