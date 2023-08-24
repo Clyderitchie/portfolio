@@ -1,17 +1,49 @@
+/* Universal element tag */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+/* Parent level element tags */
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-top: 40px;
+}
+
+h2 {
+    border-right: 6px solid black;
+    padding: 45px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+}
 /* Header element tags */
 header {
-    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 8px solid black;
+    padding: 25px 30px;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav a {
-    text-decoration: none;
+header nav a {
+    color: black;
+}
+
+/* About section element tags */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
