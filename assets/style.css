@@ -11,23 +11,21 @@ a {
     color: black;
 }
 
-main {
-    margin-top: 40px;
-}
-
 h2 {
+    border-right: 4px solid black;
+    padding: 0 15px;
     text-align: right;
-    border-right: 6px solid black;
-    padding: 45px;
-    width: 175px;
 }
 
 p {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 25px;
+    padding: 0 92px;
 }
-/* Header element tags */
+
+section {
+    margin: 15px 0;
+}
+
+/* Header section */
 header {
     font-size: 24px;
     border-bottom: 8px solid black;
@@ -44,38 +42,39 @@ header nav a {
     color: black;
 }
 
-/* About section element tags */
-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.empty {
-    flex-grow: 1;
-    flex-basis: 10%
-}
-
-/* Work section element tags */
-
-.work a {
-    display: flex;
-    flex-basis: 50%;
-    height: 200px;
+/* Hero section */
+.hero {
+    height: 350px;
+    flex-basis: 100%;
+    overflow: hidden;
     background-size: cover;
-}
-#horiseon {
-    background-image: url(./Images/digital-marketing-meeting.jpg);
+    margin-bottom: 45px;
 }
 
-/* Footer element tags */
-footer {
-    display: flex;
+/* About me section  */
+.about {
+    display: inline-flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-footer div a {
-    padding: 0 75px;
+/* Work section  */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.work div {
+    background-image: url(./Images/digital-marketing-meeting.jpg);
+    flex-basis: 75%;
+    height: 200px;
+    align-self: center;
+    background-size: cover;
+    margin-right: 304px;
+}
+
+
+/* Contact section */
