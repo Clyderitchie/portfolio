@@ -7,6 +7,7 @@
     --height: 150px;
     --background-size: cover;
     --flex-basis: 50%;
+    --section-left-lineup: 88%;
    }
   /*Parent element tags*/
   a {
@@ -21,7 +22,7 @@
   }
 
   /* Flexbox selectors */
-  nav, .about, .work, #contact, #about-flex {
+  nav, .about, #about-flex, .work, #contact, #contact-link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -39,7 +40,7 @@
     flex-basis: var(--flex-basis);
     height: var(--height);
   }
-  
+
   /*Header section*/
   header {
     border-bottom: 3px solid;
@@ -58,7 +59,6 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    
   }
   
   #hero-img {
@@ -72,13 +72,12 @@
   #welcome-text {
     font-weight: bold;
     font-size: 36px;
-    /* flex-basis: 23%; */
     margin-left: 225px;
   }
   /*About me section*/
   #about {
     border: 1px dashed red;
-    flex-basis: 88%;
+    flex-basis: var(--section-left-lineup);
     height: 166px;
     margin-bottom: 25px;
   }
@@ -91,7 +90,7 @@
 
   /*Work section*/
   #work {
-    flex-basis: 88%;
+    flex-basis: var(--section-left-lineup);
     height: 676px;
     border: 1px dashed red;
   }
@@ -142,11 +141,7 @@
   
   /*Contact section*/
   #contact-link {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 85%;
+    flex-basis: var(--section-left-lineup);
     border: 1px dashed red;
   }
   
