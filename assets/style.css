@@ -2,7 +2,11 @@
 * {
     box-sizing: border-box;
   }
-  
+   :root {
+    --margin-bottom: 45px;
+    --height: 150px;
+    --background-size: cover;
+   }
   /*Parent element tags*/
   a {
     text-decoration: none;
@@ -14,6 +18,7 @@
     font-weight: bold;
     text-align: right;
   }
+
   /*Header section*/
   header {
     border-bottom: 3px solid;
@@ -30,7 +35,7 @@
   /*Hero section*/
   .hero {
     border: 1px dashed red;
-    margin: 35px 0;
+    margin: var(--margin-bottom) 0;
   }
   
   #hero {
@@ -45,37 +50,44 @@
   #hero-img {
     border: 2px dashed blue;
     height: 300px;
-    flex-basis: 75%;
+    flex-basis: 27%;
     background-image: url(./Images/74600003.jpg);
-    background-size: cover;
+    background-size: var(--background-size);
   }
 
+  #welcome-text {
+    font-weight: bold;
+    font-size: 36px;
+    /* flex-basis: 23%; */
+    margin-left: 225px;
+  }
   /*About me section*/
   .about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: var(--margin-bottom);
   }
   
   #about {
     border: 1px dashed red;
     flex-basis: 88%;
-    height: 355px;
+    height: 166px;
     margin-bottom: 25px;
   }
 
   #about-flex {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
   }
 
-  #about p {
+  #about-text {
     font-size: 24px;
     border: 2px dashed blue;
-    flex-basis: 35%;
+    flex-basis: 100%;
   }
 
   #about-img {
@@ -91,7 +103,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    margin-bottom: var(--margin-bottom);
   }
   
   #work {
@@ -110,37 +123,37 @@
   
   #horiseon {
     background-image: url(./Images/digital-marketing-meeting.jpg);
-    background-size: cover;
+    background-size: var(--background-size);
     flex-basis: 100%;
     height: 375px;
   }
   
   #calc {
     background-image: url(./Images/calc.jpeg);
-    background-size: cover;
+    background-size: var(--background-size);
     flex-basis: 50%;
-    height: 150px;
+    height: var(--height);
   }
   
   #wall {
     background-image: url(./Images/Led\ wall.jpeg);
-    background-size: cover;
+    background-size: var(--background-size);
     flex-basis: 50%;
-    height: 150px;
+    height: var(--height);
   }
   
   #puzzle {
     background-image: url(./Images/puzzle.jpeg);
-    background-size: cover;
+    background-size: var(--background-size);
     flex-basis: 50%;
-    height: 150px;
+    height: var(--height);
   }
   
   #project {
     background-image: url(./Images/run.jpeg);
-    background-size: cover;
+    background-size: var(--background-size);
     flex-basis: 50%;
-    height: 150px;
+    height: var(--height);
   }
   
   .text-box {
@@ -157,7 +170,7 @@
   }
   
   /*Contact section*/
-  .contact {
+  #contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
