@@ -1,14 +1,19 @@
 /*Universal element tag*/
 * {
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
-  
+
    :root {
     --margin-bottom: 45px;
     --height: 150px;
     --background-size: cover;
     --flex-basis: 50%;
     --section-left-lineup: 88%;
+    --blue-border: 2px dashed blue;
+    --red-border: 2px dashed red;
+    --font24: 24px;
+    --height300: 300px;
    }
   /*Parent element tags*/
   a {
@@ -41,32 +46,41 @@
     margin-bottom: var(--margin-bottom);
   }
 
-  /* Work section image selectors */
+  /* Multi element var selcetors */
   #calc, #wall, #puzzle, #project {
     background-size: var(--background-size);
     flex-basis: var(--flex-basis);
     height: var(--height);
   }
 
+  #hero, #hero-img {
+    height: var(--height300);
+  }
+
+  /* wireframe selectors */
+    .hero, #about, #work, #contact-link {
+        border: var(--red-border);
+    }
+
+    #hero-img, #about-text, .work-a {
+        border: var(--blue-border);
+    }
   /*Header section*/
   header {
     border-bottom: 3px solid;
     padding: 0 20px;
   }
+
+  header nav a {
+    font-size: var(--font24);
+  }
  
   /*Hero section*/
   .hero {
-    border: 1px dashed red;
     margin: var(--margin-bottom) 0;
   }
   
-  #hero {
-    height: 300px;
-  }
-  
   #hero-img {
-    border: 2px dashed blue;
-    height: 300px;
     flex-basis: 27%;
     background-image: url(./Images/74600003.jpg);
     background-size: var(--background-size);
@@ -75,19 +89,17 @@
   #welcome-text {
     font-weight: bold;
     font-size: 36px;
-    margin-left: 225px;
+    margin-left: 127px;
   }
   /*About me section*/
   #about {
-    border: 1px dashed red;
     flex-basis: var(--section-left-lineup);
     height: 166px;
     margin-bottom: 25px;
   }
 
   #about-text {
-    font-size: 24px;
-    border: 2px dashed blue;
+    font-size: var(--font24);
     flex-basis: 100%;
   }
 
@@ -95,7 +107,7 @@
   #work {
     flex-basis: var(--section-left-lineup);
     height: 676px;
-    border: 1px dashed red;
+    
   }
   
   #work-flex {
@@ -134,14 +146,9 @@
     border: 2px solid green;
   }
   
-  #work a {
-    border: 1px dashed blue;
-  }
-  
   /*Contact section*/
   #contact-link {
     flex-basis: var(--section-left-lineup);
-    border: 1px dashed red;
   }
   
   #contact-link a {
