@@ -35,11 +35,17 @@
   
   #hero {
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     height: 300px;
+    
+  }
+  
+  #hero-img {
+    border: 2px dashed blue;
+    height: 300px;
+    flex-basis: 75%;
     background-image: url(./Images/74600003.jpg);
     background-size: cover;
   }
@@ -64,6 +70,7 @@
   #about {
     border: 1px dashed red;
     flex-basis: 85%;
+    height: 373px;
     margin-bottom: 25px;
   }
   
