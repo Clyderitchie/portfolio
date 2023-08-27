@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
   }
+  
    :root {
     --margin-bottom: 45px;
     --height: 150px;
@@ -29,6 +30,12 @@
     align-items: center;
   }
 
+  #hero, #work-flex {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+  }
   /* Bottom margin selectors */
   .about, .work {
     margin-bottom: var(--margin-bottom);
@@ -54,10 +61,6 @@
   }
   
   #hero {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
     height: 300px;
   }
   
@@ -96,10 +99,6 @@
   }
   
   #work-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     position: relative;
   }
   
