@@ -57,22 +57,6 @@
     margin-bottom: var(--margin-bottom);
   }
 
-  /* Multi element var selcetors */
-  #calc, #wall, #puzzle, #project {
-    background-size: var(--background-size);
-    flex-basis: var(--flex-basis);
-    height: var(--height);
-  }
-
-  #hero, #hero-img {
-    height: var(--height300);
-  }
-   
-  #horiseon-box, #calc-box, #wall-box, #puzzle-box, #run-box {
-    width: var(--box-width);
-    position: var(--box-position);
-  }
-
   /* wireframe selectors */
     .hero, #about, #work, #contact-link {
         border: var(--red-border);
@@ -106,6 +90,10 @@
   }
  
   /*Hero section*/
+  #hero, #hero-img {
+    height: var(--height300);
+  }
+
   .hero {
     margin: var(--margin-bottom) 0;
   }
@@ -134,6 +122,12 @@
   }
 
   /*Work section*/
+  #calc, #wall, #puzzle, #project {
+    background-size: var(--background-size);
+    flex-basis: var(--flex-basis);
+    height: var(--height);
+  }
+
   #work {
     flex-basis: var(--section-left-lineup);
     height: 676px;
@@ -168,6 +162,11 @@
   }
 
   /* Work section text box selectors */
+  #horiseon-box, #calc-box, #wall-box, #puzzle-box, #run-box {
+    width: var(--box-width);
+    position: var(--box-position);
+  }
+
   #horiseon-box, #calc-box, #puzzle-box {
     left: var(--left-column-wall);
   }
