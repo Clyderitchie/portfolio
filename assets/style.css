@@ -17,6 +17,9 @@
     --height300: 300px;
     --hover: border 0.3s;
     --hover-color: border #a0a0a0;
+    --box-width: 200px;
+    --box-border: 2px solid green;
+    --box-position: absolute;
    }
 
   /*Parent element tags*/
@@ -60,6 +63,11 @@
   #hero, #hero-img {
     height: var(--height300);
   }
+   
+  #horiseon-box, #calc-box, #wall-box, #puzzle-box, #run-box {
+    width: var(--box-width);
+    position: var(--box-position);
+  }
 
   /* wireframe selectors */
     .hero, #about, #work, #contact-link {
@@ -70,6 +78,11 @@
         border: var(--blue-border);
     }
 
+    #horiseon-box, #calc-box, #wall-box, #puzzle-box, #run-box {
+      border: var(--box-border);
+    }
+
+    /* Hozer and media var selectors */
     #horiseon, #calc, #wall, #puzzle, #project {
       transition: var(--hover);
     }
@@ -152,19 +165,29 @@
 
   /* Work section text box selectors */
   #horiseon-box {
-    position: absolute;
     top: 300px;
-    left: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: 2px solid green;
+    left: 2px;
+    
   }
   
   #calc-box {
-    position: absolute;
-    top: 450px;
-    left: 5px;
-    border: 2px solid green;
+    top: 470px;
+    left: 2px;
+  }
+
+  #wall-box {
+    top: 470px;
+    left: 627px;
+  }
+
+  #puzzle-box {
+    top: 619px;
+    left: 2px;
+  }
+
+  #run-box {
+    top: 619px;
+    left: 627px;
   }
   /*Contact section*/
   #contact-link {
