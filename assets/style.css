@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #F3F3F3;
   }
 
    :root {
@@ -14,7 +15,10 @@
     --red-border: 2px dashed red;
     --font24: 24px;
     --height300: 300px;
+    --hover: border 0.3s;
+    --hover-color: border #a0a0a0;
    }
+
   /*Parent element tags*/
   a {
     text-decoration: none;
@@ -65,6 +69,15 @@
     #hero-img, #about-text, .work-a {
         border: var(--blue-border);
     }
+
+    #horiseon, #calc, #wall, #puzzle, #project {
+      transition: var(--hover);
+    }
+
+    #horiseon:hover, #calc:hover, #puzzle:hover, #project:hover {
+      border: var(--hover-color);
+    }
+
   /*Header section*/
   header {
     border-bottom: 3px solid;
@@ -124,28 +137,35 @@
   #calc {
     background-image: url(./Images/calc.jpeg);
   }
-  
+
   #wall {
     background-image: url(./Images/Led\ wall.jpeg);
   }
-  
+
   #puzzle {
     background-image: url(./Images/puzzle.jpeg);
   }
-  
+
   #project {
     background-image: url(./Images/run.jpeg);
   }
-  
-  .text-box {
+
+  /* Work section text box selectors */
+  #horiseon-box {
     position: absolute;
-    top: 315px;
-    left: 0;
+    top: 300px;
+    left: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: 2px solid green;
   }
   
+  #calc-box {
+    position: absolute;
+    top: 450px;
+    left: 5px;
+    border: 2px solid green;
+  }
   /*Contact section*/
   #contact-link {
     flex-basis: var(--section-left-lineup);
@@ -154,4 +174,11 @@
   #contact-link a {
     flex-basis: 15%;
     padding-right: 75px;
+  }
+
+  /* Media and Pseduo section */
+  @media screen and (max-width: 992px) {
+    * {
+      flex-direction: column;
+    }
   }
