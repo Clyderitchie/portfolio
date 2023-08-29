@@ -2,16 +2,20 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 /* root section for var */
 :root {
   --text-color: black;
+  --header-font-size: 36px;
+  --font-size: 28px;
+  --h2-font: 32px;
   --margin-top-bottom: 2.5%;
   --wireframe-red: 1px dashed red;
   --wireframe-blue: 1px dashed blue;
 }
+
 /* parent level selectors */
 main {
   width: 88%;
@@ -30,10 +34,14 @@ header nav {
   justify-content: space-around;
   align-items: center;
   border-bottom: 4px solid black;
-  padding: 1.2% 0 ;
-  font-size: 24px;
+  padding: 1.2% 0;
+  font-size: var(--header-font-size);
 }
 
+header nav h1 {
+  font-size: 42px;
+  font-weight: bolder;
+}
 /* figure/hero selectors */
 figure {
   display: flex;
@@ -50,20 +58,20 @@ figure div {
   background-image: url(./Images/74600003.jpg);
   background-size: cover;
   background-position: center;
-  margin: var(--margin-top-bottom) 0 ;
+  margin: var(--margin-top-bottom) 0;
 }
 
 /* Flexbox selectors for main section*/
 section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   border: var(--wireframe-red);
   margin: var(--margin-top-bottom) 0;
 }
 
 section h2 {
-  font-size: 26px;
+  font-size: var(--h2-font);
   font-weight: bold;
   text-align: right;
   flex-basis: 15%;
@@ -75,6 +83,7 @@ section h2 {
 section div {
   flex-basis: 84%;
   padding: 1.5% 0;
+  font-size: var(--font-size);
   border: var(--wireframe-blue);
 }
 
@@ -96,6 +105,7 @@ section nav a {
   border: var(--wireframe-red);
 }
 
+/* Work section selector elements */
 .work {
   min-height: 200px;
   max-height: 200px;
@@ -108,297 +118,32 @@ section nav a {
   height: 350px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* old styling with px and absoulte non responive
-* {
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #F3F3F3;
-  }
-
-   :root {
-    --margin-bottom: 45px;
-    --height: 150px;
-    --background-size: cover;
-    --flex-basis: 50%;
-    --section-left-lineup: 88%;
-    --blue-border: 2px dashed blue;
-    --red-border: 2px dashed red;
-    --font24: 24px;
-    --height300: 300px;
-    --hover: border 0.3s;
-    --hover-color: border #a0a0a0;
-    --box-width: 200px;
-    --box-border: 2px solid green;
-    --box-position: absolute;
-    --left-column-wall: 2px;
-    --left-column-top: 470px;
-    --right-column-wall: 627px;
-    --right-column-top: 619px;
-    --img-position: center;
-   }
-
-  Parent element tags
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  h2, h3 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: right;
-    margin-left: 2.5%;
-  }
-
-  Flexbox selectors
-  nav, .about, #about-flex, .work, #contact, #contact-link {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #hero, #work-flex {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
-  }
-  Bottom margin selectors
-  .about, .work {
-    margin-bottom: var(--margin-bottom);
-  }
-
-  main border selectors
-    #about, #work, #contact-link {
-      border-left: 3px solid black;
-      
-    }
-
-  wireframe selectors
-    .hero, #about, #work, #contact-link {
-        border: var(--red-border);
-    }
-
-    #hero-img, #about-text, .work-a {
-        border: var(--blue-border);
-    }
-
-    #horiseon-box, #calc-box, #wall-box, #puzzle-box, #run-box {
-      border: var(--box-border);
-    }
-
-    Hozer and media var selectors
-    #horiseon, #calc, #wall, #puzzle, #project {
-      transition: var(--hover);
-    }
-
-    #horiseon:hover, #calc:hover, #puzzle:hover, #project:hover {
-      border: var(--hover-color);
-    } 
-
-  Header section
-  header {
-    border-bottom: 3px solid;
-    padding: 0 20px;
-  }
-
-  header nav a {
-    font-size: var(--font24);
-  }
- 
-  Hero section
-  #hero, #hero-img {
-    height: var(--height300);
-  }
-
-  .hero {
-    margin: var(--margin-bottom) 0;
-  }
-  
-  #hero-img {
-    flex-basis: 27%;
-    background-image: url(./Images/74600003.jpg);
-    background-size: var(--background-size);
-  }
-
-  #welcome-text {
-    font-weight: bold;
-    font-size: 36px;
-    margin-left: 127px;
-  }
-  About me section
-  #about {
-    flex-basis: var(--section-left-lineup);
-    height: 166px;
-    margin-bottom: 25px;
-  }
-
-  #about-text {
-    font-size: var(--font24);
-    flex-basis: 100%;
-  }
-
-  Work section
-  #calc, #wall, #puzzle, #project {
-    background-size: var(--background-size);
-    flex-basis: var(--flex-basis);
-    height: var(--height);
-  }
-
-  #work {
-    flex-basis: var(--section-left-lineup);
-    height: 676px;
-    
-  }
-  
-  #work-flex {
-    position: relative;
-  }
-  
-  #horiseon {
-    background-image: url(./Images/digital-marketing-meeting.jpg);
-    background-size: var(--background-size);
-    background-position: var(--img-position);
-    flex-basis: 100%;
-    height: 375px;
-  }
-  
-  #calc {
-    background-image: url(./Images/calc.jpeg);
-    background-position: var(--img-position);
-  }
-
-  #wall {
-    background-image: url(./Images/Led\ wall.jpeg);
-    background-position: var(--img-position);
-  }
-
-  #puzzle {
-    background-image: url(./Images/puzzle.jpeg);
-    background-position: var(--img-position);
-  }
-
-  #project {
-    background-image: url(./Images/run.jpeg);
-    background-position: var(--img-position);
-  }
-
-  Work section text box selectors
-  #horiseon-box, #calc-box, #wall-box, #puzzle-box, #run-box {
-    width: var(--box-width);
-    position: var(--box-position);
-  }
-
-  #horiseon-box, #calc-box, #puzzle-box {
-    left: var(--left-column-wall);
-  }
-
-  #calc-box, #wall-box {
-    top: var(--left-column-top);
-  }
-
-  #wall-box, #run-box {
-    left: var(--right-column-wall);
-  }
-
-  #puzzle-box, #run-box {
-    top: var(--right-column-top);
-  }
-
-  #horiseon-box {
-    top: 320px;
-  }
-
-  Contact section
-  #contact-link {
-    flex-basis: var(--section-left-lineup);
-  }
-  
-  #contact-link a {
-    flex-basis: 15%;
-    padding-right: 75px;
-  }
-
-  Media and Pseduo section
-  @media screen and (max-width: 992px) {
-    * {
-      flex-direction: column;
-      flex-basis: 50%;
-      justify-content: center; 
-      align-items: center;
-    }
-  } */
+#horiseon {
+  background-image: url(./Images/digital-marketing-meeting.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#clac {
+  background-image: url(./Images/calc.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#puzzle {
+  background-image: url(./Images/puzzle.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#wall {
+  background-image: url(./Images/Led\ wall.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#run {
+  background-image: url(./Images/run.jpeg);
+  background-size: cover;
+  background-position: center;
+}
