@@ -1,4 +1,172 @@
-/*Universal element tag*/
+/* universal styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+/* root section for var */
+:root {
+  --text-color: black;
+  --margin-top-bottom: 2.5%;
+  --wireframe-red: 1px dashed red;
+  --wireframe-blue: 1px dashed blue;
+}
+/* parent level selectors */
+h2, h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* header selectors */
+header nav {
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 4px solid black;
+  padding: 1.2% 0 ;
+  font-size: 24px;
+}
+
+/* figure/hero selectors */
+figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+figure img {
+  overflow: hidden;
+  object-position: center;
+  height: 400px;
+  margin: var(--margin-top-bottom) 0 ;
+}
+/* Flexbox selectors for main section*/
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center;
+  border: var(--wireframe-red);
+  margin: var(--margin-top-bottom) 0;
+}
+
+section p {
+  flex-basis: 80%;
+  padding: 1.5% 0;
+  border: var(--wireframe-blue);
+}
+
+section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 80%;
+  border: var(--wireframe-blue);
+}
+
+#horiseon {
+  flex-basis: 80%;
+  height: 350px;
+}
+
+.work {
+  flex-basis: 20%;
+  height: 200px;
+}
+
+/* footer selectors */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--margin-top-bottom) 0;
+}
+
+footer nav a {
+  border: var(--wireframe-blue);
+  flex-basis: 80%;
+  padding: 0 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old styling with px and absoulte non responive
 * {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -27,7 +195,7 @@
     --img-position: center;
    }
 
-  /*Parent element tags*/
+  Parent element tags
   a {
     text-decoration: none;
     color: black;
@@ -37,9 +205,10 @@
     font-size: 24px;
     font-weight: bold;
     text-align: right;
+    margin-left: 2.5%;
   }
 
-  /* Flexbox selectors */
+  Flexbox selectors
   nav, .about, #about-flex, .work, #contact, #contact-link {
     display: flex;
     flex-wrap: wrap;
@@ -53,12 +222,18 @@
     justify-content: center;
     align-items: center;
   }
-  /* Bottom margin selectors */
+  Bottom margin selectors
   .about, .work {
     margin-bottom: var(--margin-bottom);
   }
 
-  /* wireframe selectors */
+  main border selectors
+    #about, #work, #contact-link {
+      border-left: 3px solid black;
+      
+    }
+
+  wireframe selectors
     .hero, #about, #work, #contact-link {
         border: var(--red-border);
     }
@@ -71,7 +246,7 @@
       border: var(--box-border);
     }
 
-    /* Hozer and media var selectors */
+    Hozer and media var selectors
     #horiseon, #calc, #wall, #puzzle, #project {
       transition: var(--hover);
     }
@@ -80,7 +255,7 @@
       border: var(--hover-color);
     } 
 
-  /*Header section*/
+  Header section
   header {
     border-bottom: 3px solid;
     padding: 0 20px;
@@ -90,7 +265,7 @@
     font-size: var(--font24);
   }
  
-  /*Hero section*/
+  Hero section
   #hero, #hero-img {
     height: var(--height300);
   }
@@ -110,7 +285,7 @@
     font-size: 36px;
     margin-left: 127px;
   }
-  /*About me section*/
+  About me section
   #about {
     flex-basis: var(--section-left-lineup);
     height: 166px;
@@ -122,7 +297,7 @@
     flex-basis: 100%;
   }
 
-  /*Work section*/
+  Work section
   #calc, #wall, #puzzle, #project {
     background-size: var(--background-size);
     flex-basis: var(--flex-basis);
@@ -167,7 +342,7 @@
     background-position: var(--img-position);
   }
 
-  /* Work section text box selectors */
+  Work section text box selectors
   #horiseon-box, #calc-box, #wall-box, #puzzle-box, #run-box {
     width: var(--box-width);
     position: var(--box-position);
@@ -193,7 +368,7 @@
     top: 320px;
   }
 
-  /*Contact section*/
+  Contact section
   #contact-link {
     flex-basis: var(--section-left-lineup);
   }
@@ -203,9 +378,12 @@
     padding-right: 75px;
   }
 
-  /* Media and Pseduo section */
+  Media and Pseduo section
   @media screen and (max-width: 992px) {
     * {
       flex-direction: column;
+      flex-basis: 50%;
+      justify-content: center; 
+      align-items: center;
     }
-  }
+  } */
