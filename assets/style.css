@@ -12,8 +12,8 @@
   --font-size: 28px;
   --h2-font: 32px;
   --margin-top-bottom: 2.5%;
-  --wireframe-red: 1px dashed red;
-  --wireframe-blue: 1px dashed blue;
+  /* --wireframe-red: 1px dashed red;
+  --wireframe-blue: 1px dashed blue; */
 }
 
 /* parent level selectors */
@@ -111,6 +111,9 @@ section nav a {
   max-height: 200px;
   margin: 0.5em;
   flex-basis: calc(50% - 1em);
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
 }
 
 .work:first-child {
@@ -120,30 +123,47 @@ section nav a {
 
 #horiseon {
   background-image: url(./Images/digital-marketing-meeting.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 #clac {
   background-image: url(./Images/calc.jpeg);
-  background-size: cover;
-  background-position: center;
 }
 
 #puzzle {
   background-image: url(./Images/puzzle.jpeg);
-  background-size: cover;
-  background-position: center;
 }
 
 #wall {
   background-image: url(./Images/Led\ wall.jpeg);
-  background-size: cover;
-  background-position: center;
 }
 
 #run {
   background-image: url(./Images/run.jpeg);
-  background-size: cover;
-  background-position: center;
+}
+
+/* Media and hover selectors */
+@media only screen and (max-width: 992px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  section div {
+    flex-basis: 50%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  section div {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+}
+
+section div a:hover {
+  border: 10px solid #e5e5e5;
 }
