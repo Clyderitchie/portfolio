@@ -141,6 +141,15 @@ section nav a {
   background-image: url(./Images/run.jpeg);
 }
 
+#work-flex  p {
+  border: 1px solid black;
+  font-size: 22px;
+  width: 20%;
+  background-color: white;
+  margin-top: 2%;
+
+}
+
 /* Media and hover selectors */
 @media only screen and (max-width: 992px) {
   header nav {
