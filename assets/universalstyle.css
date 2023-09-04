@@ -54,6 +54,25 @@ header nav a {
     background-color: var(--header-background-color);
 }
 
+/* figure/hero selectors */
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+  }
+  
+  figure div {
+    overflow: hidden;
+    object-position: center;
+    height: 400px;
+    width: 88%;
+    background-size: cover;
+    background-position: center;
+    margin: var(--margin-top-bottom) 0;
+  }
+
 /* Flexbox selectors for main section*/
 section {
     display: flex;

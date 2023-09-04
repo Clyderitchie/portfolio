@@ -12,24 +12,9 @@
   --text-box-background-color: white;
 }
 
-/* figure/hero selectors */
-figure {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 3px solid black;
-}
-
+/* figure picture */
 figure div {
-  overflow: hidden;
-  object-position: center;
-  height: 400px;
-  width: 88%;
   background-image: url(./Images/74600003.jpg);
-  background-size: cover;
-  background-position: center;
-  margin: var(--margin-top-bottom) 0;
 }
 
 /* Work section selector elements */

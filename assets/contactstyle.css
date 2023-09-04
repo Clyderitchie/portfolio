@@ -1,0 +1,15 @@
+/* Section list selectors */
+section div ul {
+    display: block;
+    list-style-position: inside;
+}
+
+section div ul li {
+    padding-left: 3%;
+    margin: 1% 0;
+}
+
+/* Figure picture */
+figure div {
+    background-image: url(./Images/lapush.jpg);
+}
