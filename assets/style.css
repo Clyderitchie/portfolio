@@ -1,12 +1,3 @@
-/* universal styling */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #D6D5D5;
-}
-
 /* root section for var */
 :root {
   --text-color: black;
@@ -19,43 +10,8 @@
   --text-box-font-size: 22px;
   --text-box-width: 25%;
   --text-box-background-color: white;
-  /* --wireframe-red: 1px dashed red;
-  --wireframe-blue: 1px dashed blue; */
 }
 
-/* parent level selectors */
-main {
-  width: 88%;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-/* header selectors */
-
-header nav {
-  display: flex;
-  flex: wrap;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 4px solid black;
-  padding: 1.2% 0;
-  font-size: var(--header-font-size);
-  background-color: var(--header-background-color);
-}
-
-header nav h1 {
-  font-size: 42px;
-  font-weight: bolder;
-  background-color: var(--header-background-color);
-}
-
-header nav a {
-  background-color: var(--header-background-color);
-}
 /* figure/hero selectors */
 figure {
   display: flex;
@@ -76,32 +32,7 @@ figure div {
   margin: var(--margin-top-bottom) 0;
 }
 
-/* Flexbox selectors for main section*/
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border: var(--wireframe-red);
-  margin: var(--margin-top-bottom) 0;
-}
-
-section h2 {
-  font-size: var(--h2-font);
-  font-weight: bold;
-  text-align: right;
-  flex-basis: 15%;
-  padding-right: 15px;
-  padding-top: 5px;
-  border-right: 3px solid black;
-}
-
-section div {
-  flex-basis: 84%;
-  padding: 1.5% 0;
-  font-size: var(--font-size);
-  border: var(--wireframe-blue);
-}
-
+/* section flexbox */
 section nav {
   display: flex;
   flex-wrap: wrap;
