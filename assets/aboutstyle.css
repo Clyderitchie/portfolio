@@ -12,6 +12,10 @@
     --text-box-background-color: white;
 }
 
+/* Figure photo */
+figure div {
+    background-image: url(./Images/labeach.jpg);
+}
 /* Film photo*/
 #film .photos {
     flex-basis: 26%;
