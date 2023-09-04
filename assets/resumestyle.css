@@ -1,0 +1,24 @@
+/* Experience headers */
+h3 {
+    font-size: 30px;
+
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h3, h4 {
+    margin: 1% 0;
+}
+
+/* Section list selectors */
+section div ul {
+    display: block;
+    list-style-position: inside;
+}
+
+section div ul li {
+    padding-left: 3%;
+}
+
