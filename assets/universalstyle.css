@@ -65,3 +65,11 @@ section div {
     font-size: var(--font-size);
     border: var(--wireframe-blue);
 }
+
+section nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  

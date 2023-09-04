@@ -32,25 +32,6 @@ figure div {
   margin: var(--margin-top-bottom) 0;
 }
 
-/* section flexbox */
-section nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-section nav a {
-  border: var(--wireframe-blue);
-}
-
-
-#work-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: var(--wireframe-red);
-}
-
 /* Work section selector elements */
 .work {
   min-height: 200px;
@@ -61,6 +42,13 @@ section nav a {
   background-size: cover;
   background-position: center;
   
+}
+
+#work-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: var(--wireframe-red);
 }
 
 .work:first-child {
