@@ -105,3 +105,34 @@ section nav {
     justify-content: space-evenly;
   }
 
+/* Media and hover selectors */
+@media only screen and (max-width: 992px) {
+    header nav {
+      flex-direction: column;
+    }
+  
+    section {
+      flex-direction: column;
+    }
+  
+  
+    section div {
+      flex-basis: 50%;
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 570px) {
+    header nav {
+      flex-direction: column;
+    }
+  
+    section {
+      flex-direction: column;
+    }
+  
+    section div {
+      flex-basis: 100%;
+      flex-direction: column;
+    }
+  }

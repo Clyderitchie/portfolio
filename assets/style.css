@@ -82,37 +82,6 @@ figure div {
 }
 
 /* Media and hover selectors */
-@media only screen and (max-width: 992px) {
-  header nav {
-    flex-direction: column;
-  }
-
-  section {
-    flex-direction: column;
-  }
-
-
-  section div {
-    flex-basis: 50%;
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 570px) {
-  header nav {
-    flex-direction: column;
-  }
-
-  section {
-    flex-direction: column;
-  }
-
-  section div {
-    flex-basis: 100%;
-    flex-direction: column;
-  }
-}
-
 #work-flex a:hover {
   border: 10px solid #e5e5e5;
 }
